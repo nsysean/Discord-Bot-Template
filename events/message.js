@@ -15,7 +15,7 @@ client.on('message', async message =>{
     if(command) command.run(client, message, args) 
 })
 const Levels = require("discord-xp");
-Levels.setURL('mongodb+srv://nsysean:seansean5@cluster0.srfir.mongodb.net/test');
+Levels.setURL('Your mongo db url');
 client.on("message", async (message) => {
     if (!message.guild) return;
     if (message.author.bot) return;
